@@ -9,4 +9,5 @@ CMD ["scl", "enable", "ror40", "./run.sh"]
 
 USER root
 RUN chmod og+rw /opt/app-root/src/db
-
+RUN chown root /opt/app-root/src/sh
+RUN chmod +s /opt/app-root/src/sh
